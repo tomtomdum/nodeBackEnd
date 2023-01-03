@@ -13,4 +13,5 @@ router.get('/:studennntId', (req, res, next) => {
         name: id
     });
 });
+
 module.exports = router;
