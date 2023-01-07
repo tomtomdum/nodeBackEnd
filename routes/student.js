@@ -7,7 +7,7 @@ router.get('/getAll', (req, res, next) => {
         client.query('select * from student', (err,result)=>{
             if(!err){
 
-                res.send(result.rows);
+                res.status(200).json(result.rows);
             }
         })
     });
